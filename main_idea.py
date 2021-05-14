@@ -1,3 +1,1 @@
-Here are the four or 
-five projects that 
-we will do.
+# we will keep this as the main repo for our projects
