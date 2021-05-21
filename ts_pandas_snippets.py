@@ -90,16 +90,13 @@ df.sort_index()
 df.reset_index(drop=True)
 df.set_index('month')
 
-# aggragtes:
- df.groupby("column_a")["column_b"].count()
- df.groupby(["column_a", "column_b"])["column_c"].count()
-
+# aggragtes | groupby
+df.groupby("column_a")["column_b"].count()
+df.groupby(["column_a", "column_b"])["column_c"].count()
 df.groupby("column_a", sort= True)["column_b"].count()
+
 df.groupby("column_a", sort= True)["column_b"].count().rename_axis(['column_a'])
-df.groupby("column_a", sort= True)["column_b"].agg(['min', 'max'])
-# groupby:
-
-
+df.groupby("column_a", sort= False)["column_b"].agg(['min', 'max'])
 
 # Pivot
 
