@@ -102,6 +102,8 @@ print(a)
 a.add_(10)
 print(a)
 print(x)
+print('-------------------------')
+
 
 #using GPU as device
 if torch.cuda.is_available():
