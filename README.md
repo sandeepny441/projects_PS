@@ -1,3 +1,3 @@
 # projects_PS
 
-A repo of various basic coding stuuff related to ML
+A repo of coding stuuff and statistics related to ML using python, pytorch, and R
