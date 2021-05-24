@@ -124,3 +124,13 @@ print(a)
 print(x)
 print('------------------------------')
 
+#move tensor to CPU from GPU
+a.to("cpu")
+print(a)
+print('------------------------------')
+
+#move the tensor back to GPU
+a.to("cuda")
+print(a)
+print('------------------------------')
+
