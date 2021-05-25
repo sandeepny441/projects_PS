@@ -50,3 +50,4 @@ y.backward()
 # when we apply it on a scalar value
 print(x.grad)
 print('---------------------')
+
