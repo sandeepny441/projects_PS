@@ -14,3 +14,9 @@ https://github.com/Ferdib-Al-Islam/lstm-time-series-prediction-pytorch
 https://github.com/lkulowski/LSTM_encoder_decoder
 https://github.com/spdin/time-series-prediction-lstm-pytorch
 https://github.com/jdb78/pytorch-forecasting
+  
+  
+  For Paper: 
+    
+    TS CLassifdication
+    http://alexminnaar.com/2019/06/29/reinforcement-learning-pt1-dynamic-programming.html
