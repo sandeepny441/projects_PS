@@ -20,3 +20,7 @@ https://github.com/jdb78/pytorch-forecasting
     
     TS CLassifdication
     http://alexminnaar.com/2019/06/29/reinforcement-learning-pt1-dynamic-programming.html
+      
+      
+https://github.com/spdin/time-series-prediction-lstm-pytorch
+https://github.com/jdb78/pytorch-forecasting
