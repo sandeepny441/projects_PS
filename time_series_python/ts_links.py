@@ -24,3 +24,9 @@ https://github.com/jdb78/pytorch-forecasting
       
 https://github.com/spdin/time-series-prediction-lstm-pytorch
 https://github.com/jdb78/pytorch-forecasting
+  
+  
+        
+https://github.com/spdin/time-series-prediction-lstm-pytorch
+https://github.com/jdb78/pytorch-forecasting
+
