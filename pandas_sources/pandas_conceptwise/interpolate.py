@@ -1,4 +1,4 @@
-# interplote vs fillna: interpolta is stronger compared to fillna
+# interplote vs fillna: interplote is stronger compared to fillna
 
 import pandas as pd
 import numpy as np
