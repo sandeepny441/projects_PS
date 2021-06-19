@@ -4,7 +4,7 @@ __pycache__/
 .DS_Store
 *.py[cod]
 
+
 node_modules/ 
 *.pyc 
 *.vscode
-
