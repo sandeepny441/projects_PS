@@ -1,3 +1,11 @@
 # projects_PS
 
-A repo of coding stuuff and statistics related to ML using python, pytorch, and R
+A repo of codes related to:
+
+  Python
+  Numpy
+  Pandas
+  Time Series Forecasting
+  Deep Learning 
+  Pytorch
+  Statistics
