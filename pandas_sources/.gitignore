@@ -4,6 +4,7 @@ node_modules/
 */.ipynb_checkpoints/*
 .DS_Store
 */.DS_Store/*
+*.ipynb_checkpoints
 
 
 
