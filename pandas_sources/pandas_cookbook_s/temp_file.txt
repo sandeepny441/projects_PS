@@ -2,3 +2,6 @@
 
 pandas quiz: 
 https://github.com/guipsamora/pandas_exercises
+
+numpy quiz:
+https://github.com/rougier/numpy-100
