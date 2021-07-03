@@ -1,0 +1,74 @@
+Ch_1 Pandas_Foudations
+
+1. Dissecting the anatomy of a DataFrame
+2. Accessing the main DataFrame components
+3. Understanding data types
+4. Selecting a single column of data as a Series
+5. Calling Series methods
+6. Working with operators on a Series
+7. Chaining Series methods together
+8. Making the index meaningful
+9. Renaming row and column names
+10. Creating and deleting columns
+
+
+Ch_2 Essential_DataFrame_Operations
+
+1. Selecting multiple DataFrame columnsa
+2. Selecting columns with methods
+3. Ordering column names sensibly
+4. Operating on the entire DataFrame
+5. Chaining DataFrame methods together
+6. Working with operators on a DataFrame
+7. Comparing missing values
+8. Transposing the direction of a DataFrame operation
+9. Determining college campus diversity
+
+
+Ch_3 Data Analysis
+
+1. Developing a data analysis routine
+2. Reducing memory by changing data types
+3. Selecting the smallest of the largest
+4. Selecting the largest of each group by sorting
+5. Replicating nlargest with sort_values
+6. Calculating a trailing stop order price
+
+
+Ch_4 Seelcting_subsets_of_Data:
+
+1. Selecting Series data
+2. Selecting DataFrame rows
+3. Selecting DataFrame rows and columns simultaneously
+4. Selecting data with both integers and labels
+5. Speeding up scalar selection
+6. Slicing rows lazily
+7. Slicing lexicographically!
+
+
+ch_5 Boolean Indexing;
+
+1. Calculating boolean statistics
+2. Constructing multiple boolean conditions
+3. Filtering with boolean indexing
+4. Replicating boolean indexing with index selection
+5. Selecting with unique and sorted indexes
+6. Gaining perspective on stock prices
+7. Translating SQL WHERE clauses
+8. Determining the normality of stock market returns
+9. Improving readability of boolean indexing with the query method
+10. Preserving Series with the where method
+11. Masking DataFrame rows
+12. Selecting with booleans, integer location, and labels
+
+ch_6 Index Allignment
+
+1. Examining the Index object
+2. Producing Cartesian products
+3. Exploding indexes
+4. Filling values with unequal indexes
+5. Appending columns from different DataFrames
+6. Highlighting the maximum value from each column
+7. Replicating idxmax with method chaining
+8. Finding the most common maximum
+
