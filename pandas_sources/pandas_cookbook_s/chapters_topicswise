@@ -11,6 +11,9 @@ Ch_1 Pandas_Foudations
 9. Renaming row and column names
 10. Creating and deleting columns
 
+=====================================================================
+=====================================================================
+
 
 Ch_2 Essential_DataFrame_Operations
 
@@ -24,6 +27,9 @@ Ch_2 Essential_DataFrame_Operations
 8. Transposing the direction of a DataFrame operation
 9. Determining college campus diversity
 
+=====================================================================
+=====================================================================
+
 
 Ch_3 Data Analysis
 
@@ -33,6 +39,9 @@ Ch_3 Data Analysis
 4. Selecting the largest of each group by sorting
 5. Replicating nlargest with sort_values
 6. Calculating a trailing stop order price
+
+=====================================================================
+=====================================================================
 
 
 Ch_4 Seelcting_subsets_of_Data:
@@ -45,6 +54,8 @@ Ch_4 Seelcting_subsets_of_Data:
 6. Slicing rows lazily
 7. Slicing lexicographically!
 
+=====================================================================
+=====================================================================
 
 ch_5 Boolean Indexing;
 
@@ -61,6 +72,9 @@ ch_5 Boolean Indexing;
 11. Masking DataFrame rows
 12. Selecting with booleans, integer location, and labels
 
+=====================================================================
+=====================================================================
+
 ch_6 Index Allignment
 
 1. Examining the Index object
@@ -72,3 +86,5 @@ ch_6 Index Allignment
 7. Replicating idxmax with method chaining
 8. Finding the most common maximum
 
+=====================================================================
+=====================================================================
