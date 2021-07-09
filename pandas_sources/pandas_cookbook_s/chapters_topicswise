@@ -88,3 +88,21 @@ ch_6 Index Allignment
 
 =====================================================================
 =====================================================================
+
+ch_7 Grouping for Aggregation, Filtration, and Transformation
+
+1. Defining an aggregation
+2. Grouping and aggregating with multiple columns and functions
+3. Removing the MultiIndex after grouping
+4. Customizing an aggregation function
+5. Customizing aggregating functions with *args and **kwargs
+6. Examining the groupby object
+7. Filtering for states with a minority majority
+8. Transforming through a weight loss bet
+9. Calculating weighted mean SAT scores per state with apply
+10. Grouping by continuous variables
+11. Counting the total number of flights between cities
+12. Finding the longest streak of on-time flights
+
+=====================================================================
+=====================================================================
