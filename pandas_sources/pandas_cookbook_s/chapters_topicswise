@@ -106,3 +106,21 @@ ch_7 Grouping for Aggregation, Filtration, and Transformation
 
 =====================================================================
 =====================================================================
+
+ch_8 Restructuring Data into a Tidy Form
+
+1. Tidying variable values as column names with stack
+2. Tidying variable values as column names with melt
+3. Stacking multiple groups of variables simultaneously
+4. Inverting stacked data
+5. Unstacking after a groupby aggregation
+6. Replicating pivot_table with a groupby aggregation
+7. Renaming axis levels for easy reshaping
+8. Tidying when multiple variables are stored as column names
+9. Tidying when multiple variables are stored as column values
+10. Tidying when two or more values are stored in the same cell
+11. Tidying when variables are stored in column names and values
+12. Tidying when multiple observational units are stored in the same table
+
+=====================================================================
+=====================================================================
