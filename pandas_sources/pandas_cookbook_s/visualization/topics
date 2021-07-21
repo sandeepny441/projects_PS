@@ -1,0 +1,16 @@
+==========================================================================
+==========================================================================
+
+ch_11 Visualization with Matplotlib, Pandas, and Seaborn
+
+1. Getting started with matplotlib
+2. Visualizing data with matplotlib
+3. Plotting basics with pandas
+4. Visualizing the flights dataset
+5. Stacking area charts to discover emerging trends
+6. Understanding the differences between seaborn and pandas
+7. Doing multivariate analysis with seaborn grids
+8. Uncovering Simpson's paradox in the diamonds dataset with seaborn
+
+==========================================================================
+==========================================================================
