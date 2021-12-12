@@ -7,7 +7,7 @@ from numpy.core.defchararray import index
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import AdaBoostClassifier, GradientBoostingClassifier
 
 class AdaBoost():
     def __init__(self):
@@ -135,3 +135,12 @@ if __name__ == '__main__':
     error_rate = sum((np.not_equal(y_test, y_pred)).astype(int)) / len(y_test)
     print('with sklearn impl : Error rate %.2f %%' % (round(error_rate * 100, 2)))
     print('with sklearn impl : Accuracy %.2f %%' % (ab_sklearn.score(X_test, y_test) * 100))
+
+    gb_sklearn = GradientBoostingClassifier(n_estimators=400, random_state=1)
+    gb_sklearn.fit(X_train, y_train)
+
+    y_pred = gb_sklearn.predict(X_test)
+
+    error_rate = sum((np.not_equal(y_test, y_pred)).astype(int)) / len(y_test)
+    print('gradientboost : Error rate %.2f %%' % (round(error_rate * 100, 2)))
+    print('gradientboost : Accuracy %.2f %%' % (gb_sklearn.score(X_test, y_test) * 100))
