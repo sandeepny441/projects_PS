@@ -1,0 +1,57 @@
+ Functions 
+ historically called as subroutines and procedures
+ code reusability, helps in program Design
+ Functions: 
+	○ def…lambda
+	○ return…yield 
+	○ global…non-local
+ HOW you are doing something over WHAT you are doing
+	○ Function rules
+	○ scope rules
+	○ argument passing 
+	○ generators and functional tools 
+	○ polymorphism 
+ Function Rules:
+	○ def is an executable code
+	○ In compiled Languages like C, def would have been inexecutable
+	○ def creates an object and assigns a name to it
+	○ these objects can have user defined attributes
+	○ lambda is for in-line functions
+	○ default result value is None
+	○ variables are searched in scopes first
+	○ global to make a variable accessible from outside
+	○ non-local --> syntactically enclosing def statement 
+ Arguments:
+	○ Passed by assignment: Object Reference
+	○ The caller and function share objects by References, but no Name Aliasing 
+	○ Passed by place def some(a, b) --> some(1,2) a=1, b=2
+	○ *args and *kwargs, *pargs, *kargs
+	○ Function definitions use the same two forms to specify argument defaults, and collect arbitrarily many arguments received?
+	○ Can take anything as input and give anything as output, no constraints
+	○ any object Compatible Interface can be a function?
+ def 
+	○ are they arguments or parameters?
+	○ None can be mentioned or not. If not, then it will be ignored at the call
+	○ def at runtime
+		○ There is only Python runtime, no separate compile time 
+		○ functions in Python are too flexible so they can be used like objects in general
+		○ Any example of when to attribute values to functions and use them?
+		○ defining and calling
+		○ functions are Type Less
+		○  Function gains its meaning by what we pass into by and not how it is declared -- CORE feature of Python 
+ Polymorphism
+	○ Python dispatches the control to the objects 
+	○ Type dependent operation is Polymorphism
+	○ Dynamically Typed Language
+	○ objects should support the expected Interface
+	○ What are class based objects 
+	○ We code to object interfaces not data types
+	○ CORE difference between Statically Typed Language and Dynamically Typed Language
+	○ Python lets us type minimum by keeping the range of operations we can do with that MORE
+	○ Every operation in Python is probably polymorphic
+	○ duck Typing. Duck is not important, only Typing is.
+	○ What is an Operand
+	○ code reduction and also code flexibility -> 2 advantages of polymorphism or functions
+ Local Variables
+	○ Can you identify local variables in a function: parameters, temp variables, etc.
+local variables and their STATE
