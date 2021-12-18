@@ -3,9 +3,13 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
+from numpy.core.fromnumeric import amax
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import roc_curve
 from sklearn.model_selection import train_test_split
 
 class LogisticReg:
@@ -43,8 +47,10 @@ class LogisticReg:
         print("******* Accuracy measure *********")
         print(classification_report(self.y_test, model.predict(self.X_test)))
         self.plot_heat_map_binary(
-            model, reg.X_test, reg.y_test, "linear model")
+           model, reg.X_test, reg.y_test, "linear model")
+        #self.plot_roc_auc([model], reg.X_test, reg.y_test, "orange", ["linear model"])
         print("-" * 60)
+        return model
 
     def model_with_newton_method(self):
         model = LogisticRegression(
@@ -64,7 +70,9 @@ class LogisticReg:
                     self.y_test,
                     "newtons method")
         print(classification_report(self.y_test, model.predict(self.X_test)))
+        #self.plot_roc_auc([model], reg.X_test, reg.y_test, "green", ["newton model"])
         print("-" * 60)
+        return model
 
     def model_with_regularization(self):
         model = LogisticRegression(
@@ -85,6 +93,7 @@ class LogisticReg:
             model, self.X_test, self.y_test, "l2 - regularization")
         print(classification_report(self.y_test, model.predict(self.X_test)))
         print("-" * 60)
+        return model
 
     def model_with_stats_model():
         pass
@@ -109,6 +118,31 @@ class LogisticReg:
                         ha='center', va='center', color='red')
         plt.title(title)
 
+    def plot_roc_auc(self, models, X_test, y_test, colors, titles):
+        #plt.style.use('seaborn')
+        fig, ax = plt.subplots(1)
+        for i, model in enumerate(models):
+            predict_proba = model.predict_proba(X_test)
+            fpr, tpr, thresholds = roc_curve(y_test, predict_proba[:,1], pos_label=1)
+
+            # for plotting the standard roc line (reference)
+            random_probs = [0 for i in range(len(y_test))]
+            p_fpr, p_tpr, _ = roc_curve(y_test, random_probs, pos_label=1)
+
+
+        
+            # plot roc curves
+            ax.plot(fpr, tpr, linestyle='--',color=colors[i], label=titles[i])
+            ax.plot(p_fpr, p_tpr, linestyle='--', color='blue')
+
+            ax.set_title('ROC curve')
+            ax.set_xlabel('False Positive Rate')
+            ax.set_ylabel('True Positive rate')
+            #ax.xlabel('False Positive Rate')
+            #ax.ylabel('True Positive rate')
+
+            ax.legend(loc='best')
+
 if __name__ == '__main__':
     reg = LogisticReg(
             input_file='data/emails.csv',
@@ -122,9 +156,20 @@ if __name__ == '__main__':
     reg.y_train = split_data[2]
     reg.y_test = split_data[3]
 
-    reg.model_with_linear()
-    reg.model_with_newton_method()
-    reg.model_with_regularization()
+    models = []
+    m1 = reg.model_with_linear()
+    m2 = reg.model_with_newton_method()
+    m3 = reg.model_with_regularization()
 
+    from sklearn.neighbors import KNeighborsClassifier
+    m4 = KNeighborsClassifier(n_neighbors=4)
+    m4.fit(reg.X_train, reg.y_train)
+
+    reg.plot_roc_auc(
+        [m1, m2, m3, m4], 
+        reg.X_test,
+        reg.y_test,
+        ['orange', 'green', 'yellow', 'red'],
+        ['linear', 'newtons', 'regularization', 'KNN'])
     # show all plots at end
-    #plt.show()
+    plt.show()
