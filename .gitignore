@@ -2,9 +2,13 @@ __pycache__/
 
 *$py.class
 .DS_Store
+*/.DS_Store/*
 *.py[cod]
 
 
 node_modules/ 
 *.pyc 
 *.vscode
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
